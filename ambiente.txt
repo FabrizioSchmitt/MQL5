@@ -1,0 +1,36 @@
+OBS:
+AULA 012 - 003 MQL5Script MT5MenuFileView - navegação geral pelo metatrader5.
+
+//------------------------------Ambiente---------------------------------
+1- A funções do MQL5 são escritas em maiúsculo. 
+2- View/ Navigator para encontrar as estruturas de navegação do editor metatrade.
+3- view/toolbox para encontrar as abas de ferramentas do bot.
+4- Experts é onde podemos ver as ações do bot.
+5- Os Robôs sempre estarão vinculados á um gráfico. 
+6- 
+
+//-----------------------------------Propriedades-------------------------------
+
+5- #property é onde inserimos as propriedades do script
+6- property não precisa de ";" de finalização
+
+
+//------------------------------------Declarações-------------------------------
+* Declaração de variável: <tipo> <nome> ;
+* Declaração de método: <tipo de retorno> <nome> (<parâmetro)> { <escopo>}
+* Declaração de variável com comando input: input <tipo> <nome> - Mostra janela inicial com parâmetros.
+* 
+
+//---------------------------------Métodos----------------------------------------
+void onStart() - Inicializa os métodos no momento de execução do script.
+--
+print (<string>); - imprime uma string.
+sleep (<int>) - define uma pausa na execução do script definida em milissegundos. 
+TimeCurrent() - retorna o valor atual do servidor.
+
+
+----------------------------------------------Propriedade---------------------------
+* #property script_show_inputs - Força a janela meta-trader à mostrar a janela de entrada de dados. Sem essa propriedade, o script é executado sem perguntar os parâmetros. 
+
+* 
+
