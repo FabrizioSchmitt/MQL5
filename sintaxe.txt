@@ -1,0 +1,19 @@
+1- Comentários // Uma linha
+2- /* múltiplas linhas */
+---------------------------------------------
+Identificadores
+
+1- Números 0-9 (não podem iniciar um identificador)
+2- letras
+3- _ underscore
+---------------------------Tipos de dados (primitivos)---------------------
+
+1- int
+2- bool
+3- double
+4- string
+
+---------------------------Tipos de dados compostos--------------
+
+1- datatime      valor: D'ano-dia-mes hora:minuto:segundo';
+

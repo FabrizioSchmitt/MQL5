@@ -7,7 +7,7 @@ AULA 012 - 003 MQL5Script MT5MenuFileView - navegação geral pelo metatrader5.
 3- view/toolbox para encontrar as abas de ferramentas do bot.
 4- Experts é onde podemos ver as ações do bot.
 5- Os Robôs sempre estarão vinculados á um gráfico. 
-6- 
+
 
 //-----------------------------------Propriedades-------------------------------
 
