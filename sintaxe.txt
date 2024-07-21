@@ -17,3 +17,7 @@ Identificadores
 
 1- datatime      valor: D'ano-dia-mes hora:minuto:segundo';
 
+
+----------------------------Trabalhando com Strings-----------------
+/n pula uma linha.
+
