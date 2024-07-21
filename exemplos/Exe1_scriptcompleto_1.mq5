@@ -1,5 +1,5 @@
 //+------------------------------------------------------------------+
-//|                                              exe-5-convercao.mq5 |
+//|                                      exe-6_castingExcplicito.mq5 |
 //|                                                         Fabrizio |
 //|                                             https://www.mql5.com |
 //+------------------------------------------------------------------+
@@ -12,14 +12,10 @@
 void OnStart()
   {
 //---
-   int valorInt = 2/3;
-   int valorInt_2 = 2/3.0;
-   double valorDouble_1 = 2/3;
-   double valorDouble_2= 2.0/3.0;
-   double valorDouble_3= 2/3.0;
-   Print("Valorint- 2/3 = ", valorInt,"\nValorInt_2- 2/3.0= ",valorInt_2,"\nValorDouble_1- 2/3= ",valorDouble_1
-   ,"\nValorDouble_2- 2.0/3.0= ",valorDouble_2,"\nValorDobule3- 2/3.0= ",valorDouble_3);
-   
+   int var1=20;
+   int var2=12;
+   double var3= (double) var1/var2;
+   Print("20/12 usando cast flutuante: ",var3);
    
   }
 //+------------------------------------------------------------------+
