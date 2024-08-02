@@ -33,4 +33,9 @@ TimeCurrent() - retorna o valor atual do servidor.
 * #property script_show_inputs - Força a janela meta-trader à mostrar a janela de entrada de dados. Sem essa propriedade, o script é executado sem perguntar os parâmetros. 
 
 * 
+MQH ------ MQH são arquivos que podem ser usados para estruturar variáveis, funções e incluí-las em outros documentos para distribuir funcionalidades em diversos EAs. A vantagem de usar um documento desses é a capacidade de distribuir apenas pequenas quantidades de código mantendo o código fonte protegido e inacessível. 
+
+OBS: Arquivo MQH não é compilado, porem se vc faz uma alteração nele é necessário recompilar seu programa principal para que essas informações entrem.
+
+Métodos eventHandlers:
 
