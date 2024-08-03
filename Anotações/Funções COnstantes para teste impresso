@@ -1,0 +1,78 @@
+Predefined Macro Substitutions
+
+To simplify the debugging process and obtain information about operation of a mql5-program, there are special macro constant, values of which are set at the moment of compilation. The easiest way to use these constants is outputting values by the Print() function, as it's shown in the example.
+
+
+
+
+Constant
+ 
+
+Description
+ 
+
+
+__CPU_ARCHITECTURE__
+ 
+Name of architecture (set of commands) EX5 file compiled for
+ 
+
+__DATE__
+ 
+File compilation date without time (hours, minutes and seconds are equal to 0)
+ 
+
+__DATETIME__
+ 
+File compilation date and time
+ 
+
+__LINE__
+ 
+Line number in the source code, in which the macro is located
+ 
+
+__FILE__
+ 
+Name of the currently compiled file
+ 
+
+__PATH__
+ 
+An absolute path to the file that is currently being compiled
+ 
+
+__FUNCTION__
+ 
+Name of the function, in whose body the macro is located
+ 
+
+__FUNCSIG__
+ 
+Signature of the function in whose body the macro is located. Logging of the full description of functions can be useful in the identification of overloaded functions
+ 
+
+__MQLBUILD__,__MQL5BUILD__
+ 
+Compiler build number
+ 
+
+__COUNTER__
+ 
+The compiler for each encountered __COUNTER__ declaration substitutes the counter value from 0 to N-1 where N is a number of uses in the code.  The __COUNTER__ order is guaranteed when recompiling the source code with no changes.
+
+The __COUNTER__ value is calculated the following way:
+•the initial counter value is 0,
+•after each counter usage, its value is increased by 1,
+•first, the compiler expands all macros and templates into source code on-site,
+•a separate code is created for each template function specialization,
+•a separate code is created for each template class/structure specialization,
+•next, the compiler passes through the obtained source code in the defined order and replaces each detected __COUNTER__ usage with the current counter value.
+
+The example below shows how the compiler handles the source code and replaces all instances of __COUNTER__ it meets with sequentially increasing values.
+ 
+
+__RANDOM__
+ 
+The compiler inserts a random ulong value for each __RANDOM__ declaration.
+ 
