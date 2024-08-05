@@ -1,0 +1,1166 @@
+https://www.mql5.com/pt/docs/constants/errorswarnings/errorscompile
+
+
+Erros de Compilação
+O MetaEditor 5 exibe mensagens de erro sobre os erros de programa detectados pelo compilador interno durante a compilação. A lista destes erros estão na tabela dada abaixo. Para compilar um código-fonte em um código executável, pressione F7. Programas que contêm erros não podem ser compilados até que os erros identificados pelo compilador sejam eliminados.
+
+Código
+
+Descrição
+
+100
+
+Erro de leitura de arquivo
+
+101
+
+Erro de abertura de arquivo *. EX5 para escrever nele para gravação
+
+103
+
+Sem memória livre suficiente para completar compilação
+
+104
+
+Unidade sintática vazia não reconhecida pelo compilador
+
+105
+
+Nome de arquivo incorreto em #include
+
+106
+
+Erro acessando um arquivo em #include (provavelmente o arquivo não existe)
+
+108
+
+Nome inapropriado para #define
+
+109
+
+Comando desconhecido de preprocessador (válidos #include, #define, #property, #import)
+
+110
+
+Ativo desconhecido para compilador
+
+111
+
+Função não implementada (descrição está presente, mas sem corpo)
+
+112
+
+Dupla aspas (") omitida
+
+113
+
+Chave angular de abertura (<) ou aspas duplas (") omitida
+
+114
+
+Aspas simples (') omitida
+
+115
+
+Chave angular de fechamento ">" omitida
+
+116
+
+Tipo não especificado na declaração
+
+117
+
+Sem operador return ou return não encontrado em todas as ramificações da implementação
+
+118
+
+Colchete de abertura de parâmetros de chamada era esperada
+
+119
+
+Erro escrevendo EX5
+
+120
+
+Acesso inválido a um array
+
+121
+
+A função não é do tipo void e o operador return deve retornar um valor
+
+122
+
+Declaração incorreta do destrutor
+
+123
+
+Dois pontos ":" está faltando
+
+124
+
+Variável já esta declarada
+
+125
+
+Variável com tal identificador já declarado
+
+126
+
+Nome de variável é longo demais (> 250 caracteres)
+
+127
+
+Estrutura com tal identificador já definida
+
+128
+
+Estrutura não está definida
+
+129
+
+Membro de estrutura com o mesmo nome já definido
+
+130
+
+Sem tal membro de estrutura
+
+131
+
+Emparelhamento de chaves violado
+
+132
+
+Parênteses de abertura "(" esperada
+
+133
+
+Chaves desbalanceadas (sem "}")
+
+134
+
+Dificuldade para compilar (ramificações demais, níveis de empilhamento interno são sobre-preenchidos
+
+135
+
+Erro de abertura de arquivo para leitura
+
+136
+
+Sem memória suficiente para baixar o arquivo fonte em memória
+
+137
+
+Variável é esperada
+
+138
+
+Referência não pode ser inicializada
+
+140
+
+Atribuição esperada (aparece na declaração)
+
+141
+
+Chave de abertura "{" esperada
+
+142
+
+Parâmetro pode ser um array dinâmico somente
+
+143
+
+Uso de tipo "void" não é aceitável
+
+144
+
+Sem par correspondente para ")" ou "]", isto é, "(" ou "[" está ausente
+
+145
+
+Sem par correspondente para "(" ou "[", isto é, ")" ou "]" está ausente
+
+146
+
+Tamanho de array incorreto
+
+147
+
+Excesso de parâmetros (> 64)
+
+149
+
+Este símbolo (token) não é esperado aqui
+
+150
+
+Uso inválido de operação (operandos inválidos)
+
+151
+
+Expressão de tipo void não é permitido
+
+152
+
+Operador é esperado
+
+153
+
+Uso incorreto do break
+
+154
+
+Ponto e vírgula ";" esperado
+
+155
+
+Vírgula "," esperada
+
+156
+
+Deve ser um tipo classe, não estrutura
+
+157
+
+Expressão é esperada
+
+158
+
+"não caractere HEX" encontrado em HEX ou número longo demais (número de dígitos > 511)
+
+159
+
+Constante-string tem mais que 65534 caracteres
+
+160
+
+Definição de função não é aceitável aqui
+
+161
+
+Término de programa inesperado
+
+162
+
+Declaração adiantada é proibida para estruturas
+
+163
+
+Função com este nome já está definida e tem um outro tipo de retorno
+
+164
+
+Função com este nome já está definida e tem um conjunto diferente de parâmetros
+
+165
+
+Função com este nome já está definida e implementada
+
+166
+
+Sobrecarga de função para esta chamada não foi encontrada
+
+167
+
+Função com um valor de retorno de tipo void não pode retornar um valor
+
+168
+
+Função não está definida
+
+170
+
+Valor é esperado
+
+171
+
+Em expressão case somente constantes inteiras são válidas
+
+172
+
+O valor de case neste switch já é usado
+
+173
+
+Inteiro é esperado
+
+174
+
+Em expressão #import, nome de arquivo é esperado
+
+175
+
+Expressões não são permitidas em nível global
+
+176
+
+Parênteses ")" omitido antes de ";"
+
+177
+
+Uma variável à esquerda do sinal de igualdade é esperada
+
+178
+
+O resultado de expressão não é usado
+
+179
+
+Declaração de variáveis não é permitida em case
+
+180
+
+Conversão implícita de uma string para um número
+
+181
+
+Conversão implícita de um número para uma string
+
+182
+
+Chamada ambígua de uma função sobrecarregada (várias sobrecargas se enquadram)
+
+183
+
+else ilegal sem apropriado if
+
+184
+
+Inválido case ou default sem um switch
+
+185
+
+Uso inapropriado de reticência
+
+186
+
+A seqüência de inicialização tem mais elementos que a variável inicializada
+
+187
+
+Uma constante paracaseesperada
+
+188
+
+Uma expressão constante requerida
+
+189
+
+Uma variável constante não pode ser alterada
+
+190
+
+Colchete de fechamento ou uma vírgula é esperado (declarando membro de array)
+
+191
+
+Identificador de enumeração já definido
+
+192
+
+Enumeração não pode ter modificadores de acesso (const, extern, static)
+
+193
+
+Membro de enumeração já declarado com um valor diferente
+
+194
+
+Existe uma variável definida com o mesmo nome
+
+195
+
+Existe uma estrutura definida com o mesmo nome
+
+196
+
+Nome de membro de enumeração esperado
+
+197
+
+Expressão de inteiro esperado
+
+198
+
+Divisão por zero em expressão constante
+
+199
+
+Número errado de parâmetros na função
+
+200
+
+Parâmetro por referência deve ser uma variável
+
+201
+
+Variável de mesmo tipo para passar por referência esperada
+
+202
+
+Uma variável constante não pode ser passada por uma referência não constante
+
+203
+
+Requer uma constante inteira positiva
+
+204
+
+Falha em acessar membro protegido de classe
+
+205
+
+Import já definido de uma outra forma
+
+208
+
+Arquivo executável não criado
+
+209
+
+Ponto de entrada 'OnCalculate' não encontrado para o indicador
+
+210
+
+O operador continue pode ser usado somente dentro de um loop
+
+211
+
+Erro acessando membro privado (fechado) de classe
+
+213
+
+Método de estrutura ou classe não está declarado
+
+214
+
+Erro acessando método privado (fechado) de classe
+
+216
+
+Cópia de estruturas com objetos não é permitida
+
+218
+
+Índice fora do intervalo do array
+
+219
+
+Inicialização de array em declaração de estrutura ou classe não permitida
+
+220
+
+Construtor de classe não pode ter parâmetros
+
+221
+
+Destrutor de classe não pode ter parâmetros
+
+222
+
+Método de classe ou estrutura com o mesmo nome e parâmetros já foi declarado
+
+223
+
+Operando esperado
+
+224
+
+Método de classe ou estrutura com o mesmo nome existe, mas com parâmetros diferentes (declaração!=implementação)
+
+225
+
+Função importada não está descrita
+
+226
+
+ZeroMemory() is not allowed for objects with protected members or inheritance
+
+227
+
+Chamada ambígua da função sobrecarregada (correspondência exata de parâmetros para várias sobrecargas)
+
+228
+
+Nome de variável esperada
+
+229
+
+Um referência não pode ser declarada neste local
+
+230
+
+Já usado como nome da enumeração
+
+232
+
+Classe ou estrutura esperada
+
+235
+
+Não pode chamar operador 'delete' para excluir o array
+
+236
+
+Operador 'while' esperado
+
+237
+
+Operador 'delete' deve ter um ponteiro
+
+238
+
+Já existe 'default' para este 'switch'
+
+239
+
+Erro de sintaxe
+
+240
+
+Seqüência-escape pode ocorrer somente em strings (começam com '\')
+
+241
+
+Array requerido - colchete '[' não se aplica a um array, ou não arrays são passados como parâmetros de array
+
+242
+
+Não pode ser inicializado através da seqüência de inicialização
+
+243
+
+Import não está definido
+
+244
+
+Erro de otimizador na árvore sintática
+
+245
+
+Estruturas declaradas em excesso (tente simplificar o programa)
+
+246
+
+Conversão do parâmetro não é permitida
+
+247
+
+Uso incorreto do operador 'delete'
+
+248
+
+Não é permitido declarar um ponteiro para uma referência
+
+249
+
+Não é permitido declarar uma referência para uma referência
+
+250
+
+Não é permitido declarar um ponteiro para um ponteiro
+
+251
+
+Declaração de estrutura na lista de parâmetros não é permitida
+
+252
+
+Operação inválida de conversão de tipo
+
+253
+
+Um ponteiro pode ser declarado somente para uma classe ou estrutura
+
+256
+
+Identificador não declarado
+
+257
+
+Erro do otimizador de código executável
+
+258
+
+Erro de geração de código executável
+
+260
+
+Expressão inválida para o operador 'switch'
+
+261
+
+Pool de constantes de string sobre-preenchido, simplifique o programa
+
+262
+
+Não pode converter para enumeração
+
+263
+
+Não use 'virtual' para dados (membros de uma classe ou estrutura)
+
+264
+
+Não pode chamar método protegido de uma classe
+
+265
+
+Funções virtuais sobrepostas retornam um tipo diferente
+
+266
+
+Classe não pode ser herdada de uma estrutura
+
+267
+
+Estrutura não pode ser herdada de uma classe
+
+268
+
+Construtor não pode ser virtual (especificador virtual não é permitido)
+
+269
+
+Estrutura não pode ter métodos virtuais
+
+270
+
+Função deve ter um corpo
+
+271
+
+Sobrecarga de funções de sistema (funções de terminal) é proibida
+
+272
+
+Especificador const não é válido para funções que não são membros de uma classe ou estrutura
+
+274
+
+Não permitido alterar membros de classe em método constante
+
+276
+
+Seqüência de inicialização inapropriada
+
+277
+
+Valor padrão faltante para o parâmetro (declaração específica de parâmetros default)
+
+278
+
+Sobreposição do parâmetro padrão (valores diferentes na declaração e implementação)
+
+279
+
+Não permitido chamar método não constante para um objeto constante
+
+280
+
+Um objeto é necessário para acessar membros (um ponteiro para uma não classe/estrutura está definido)
+
+281
+
+O nome de uma estrutura já declarada não pode ser usado em declaração
+
+284
+
+Conversão não autorizada (em herança fechada)
+
+285
+
+Estruturas e arrays não podem ser usados como variáveis de input
+
+286
+
+Especificador const não é válido para construtor/destrutor
+
+287
+
+Expressão de string incorreta para um datetime
+
+288
+
+Propriedade desconhecida (#property)
+
+289
+
+Valor incorreto de uma propriedade
+
+290
+
+Índice inválido para uma propriedade em #property
+
+291
+
+Chamar parâmetro omitido - <func (x,)>
+
+293
+
+Objeto deve ser passado por referência
+
+294
+
+Array deve ser passado por referência
+
+295
+
+Função foi declarada como exportável
+
+296
+
+Função não foi declarada como exportável
+
+297
+
+É proibido exportar funções importadas
+
+298
+
+Função importada não pode ter este parâmetro (proibido passar um ponteiro, classe ou estrutura contendo um array dinâmico, ponteiro, classe, etc.)
+
+299
+
+Deve ser uma classe
+
+300
+
+#import não foi fechado
+
+302
+
+Tipo incompatível
+
+303
+
+Variável externa (extern)já está inicializada
+
+304
+
+Nenhuma funçãoexportadaouponto de entradaencontrado
+
+305
+
+Chamada explícita aoconstrutornão é permitida
+
+306
+
+Método foi declarado comoconstante
+
+307
+
+Método não foi declarado comoconstante
+
+308
+
+Tamanho incorreto do arquivo de recurso
+
+309
+
+Nome de recurso incorreto
+
+310
+
+Erro de abertura de arquivo de recurso
+
+311
+
+Erro de leitura de arquivo de recurso
+
+312
+
+Tipo de recurso desconhecido
+
+313
+
+Caminho incorreto para o arquivo de recurso
+
+314
+
+O nome dorecursoespecificado já é usado
+
+315
+
+Argumento esperado para a macro tipo-função
+
+316
+
+Símbolo inesperado na definição de macro
+
+317
+
+Erro em parâmetros formais da macro
+
+318
+
+Número inválido de parâmetros para uma macro
+
+319
+
+Parâmetro em excesso para uma macro
+
+320
+
+Complexo demais, simplifique a macro
+
+321
+
+Parametro para EnumToString() somente pode ser uma enumeração
+
+322
+
+O nome do recurso é longo demais
+
+323
+
+Formato de imagem não suportado (somente BMP com cor de 24 ou 32 bits de profundidade é suportado)
+
+324
+
+Um array não pode ser declarado em operador
+
+325
+
+A função pode ser declarada somente no escopo global
+
+326
+
+A declaração não é permitida para o escopo corrente
+
+327
+
+Inicialização de variáveis estáticas com os valores de variáveis locais não é permitida
+
+328
+
+Declaração ilegal de um array de objetos que não tem um construtor padrão
+
+329
+
+Lista de inicialização permitida somente para construtores
+
+330
+
+Sem definição de função após lista de inicialização
+
+331
+
+Lista de inicialização está vazia
+
+332
+
+Inicialização de array em um construtor não é permitida
+
+333
+
+Inicializar membros de uma classe pai na lista de inicialização não é permitido
+
+334
+
+Expressão do tipo inteiro esperado
+
+335
+
+Memória requerida para o array excede o valor máximo
+
+336
+
+Memória requerida para a estrutura excede o valor máximo
+
+337
+
+Memória requerida para as variáveis declaradas no nível global excede o valor máximo
+
+338
+
+Memória requerida para variáveis locais excede o valor máximo
+
+339
+
+Construtornão definido
+
+340
+
+Nome inválido do arquivo de ícone
+
+341
+
+Não pode abrir o arquivo de íconeno caminho especificado
+
+342
+
+O arquivo de ícone está incorreto e não é do formato ICO format
+
+343
+
+Reinicialização de um membro em um construtor de uma classe/estrutura usando a lista de inicialização
+
+344
+
+Inicialização de membros estáticos na lista de inicialização do construtor não é permitida
+
+345
+
+Inicialização de um membro não-estático de uma classe/estrutura em nível global não é permitida
+
+346
+
+O nome do método da classe/estrutura corresponde ao nome de um membro declarado anteriormente
+
+347
+
+O nome do membro da classe/estrutura corresponde ao nome de um método declarado anteriormente
+
+348
+
+Função virtual não pode ser declarada como estática
+
+349
+
+O modificador const não é permitido para funções estáticas
+
+350
+
+Construtor ou destrutor não pode ser estático
+
+351
+
+Membros não-estáticos de uma classe ou estrutura não podem ser acessados a partir de uma função estática
+
+352
+
+Uma operação de sobrecarregada (+,-,[],++,-- etc.) é esperada após a palavra-chave operator
+
+353
+
+Nem todas as operações podem ser sobrecarregadas em MQL5
+
+354
+
+Definição não corresponde à declaração
+
+355
+
+Um número inválido de parâmetros é especificado para o operador
+
+356
+
+Função de manipulação de evento não encontrada
+
+357
+
+Método não pode ser exportado
+
+358
+
+Um ponteiro para o objeto constante não pode ser normalizado por um objeto não-constante
+
+359
+
+Templates de classe não são suportados ainda
+
+360
+
+Sobrecargade template de função não é suportado ainda
+
+361
+
+Template de função não pode ser aplicado
+
+362
+
+Parâmetro ambíguo em template de função (vários tipos de parâmetros podem ser aplicados)
+
+363
+
+Incapaz de determinar o tipo do parâmetro, através do qual o argumento do template de função deveria ser normalizado
+
+364
+
+Número incorreto de parâmetros no template de função
+
+365
+
+Template de função não pode ser virtual
+
+366
+
+Templates de função não podem ser exportados
+
+367
+
+Templates de função não podem ser importados
+
+368
+
+Estruturas contendo objetos não são permitidas
+
+369
+
+Arrays de seqüência e estruturas que contêm os objetos não são permitidos
+
+370
+
+Um membro estático de classe/estrutura deve ser explicitamente inicializado
+
+371
+
+Limitação do compilador: a string não pode conter mais de 65 535 caracteres
+
+372
+
+Inconsistente #ifdef/#endif
+
+373
+
+Objeto de classe não pode ser retornado, construtor de cópia não encontrado
+
+374
+
+Membros e métodos não estáticos não podem ser usados
+
+375
+
+OnTesterInit() impossível de usar sem o OnTesterDeinit()
+
+376
+
+Redefinição do parâmetro formal '%s'
+
+377
+
+Macro __FUNCSIG__ e __FUNCTION__ não pode aparecer fora de um corpo de função
+
+378
+
+Tipo inválido retornado. Por exemplo, este erro será produzido para funções importadas da DLL que retornam estrutura ou ponteiro.
+
+379
+
+Erro ao utilizar o modelo
+
+380
+
+Não é utilizado
+
+381
+
+Sintaxe inadmissível ao declarar apenas a função virtual, é somente permitido "=NULL" ou "=0"
+
+382
+
+As funções virtuais podem ser declaradas apenas com o especificador da função virtual ("=NULL" ou "=0")
+
+383
+
+É proibido criar um exemplar de classe abstrata
+
+384
+
+Para uma conversão dinâmica  usando o operador dynamic_cast, o tipo de propósito deve ser o ponteiro para o tipo de usuário
+
+385
+
+Espera-se o tipo de "ponteiro para a função"
+
+386
+
+Não são suportados os ponteiros para métodos
+
+387
+
+Erro, não é possível determinar o tipo de ponteiro para a função
+
+388
+
+A conversão de tipo não está disponível devido a herançafechada
+
+389
+
+A variável com modificador const deve ser inicializada imediatamente após à declaração
+
+393
+
+Na interface podem ser declarados apenas os métodos com acesso público
+
+394
+
+Anexo inválido da interface para outra interface
+
+395
+
+A interface pode ser herdada apenas a partir de outra interface
+
+396
+
+À espera da interface
+
+397
+
+As interfaces apenas suportam herança pública
+
+398
+
+A interface não pode conter membros
+
+399
+
+Não se devem criar diretamente os objetos da interface, só através da herança
+
+400
+
+O especificador não pode ser usado na declaração forward
+
+401
+
+A herança desta classe não é possível, pois é declarada com um especificador final
+
+402
+
+É impossível substituir um método declarado com o especificador final
+
+403
+
+O especificador final só pode ser aplicado a funções virtuais
+
+404
+
+Na verdade, o método marcado com o especificador override não substitui nenhuma função de classe base
+
+405
+
+O especificador não é permitido na definição da função, mas, sim, apenas na declaração
+
+406
+
+Não é possível converter esse tipo no especificado
+
+407
+
+Este tipo não pode ser usado para variável de recurso
+
+408
+
+Erro no arquivo do projeto
+
+409
+
+Não pode ser usado como membro union
+
+410
+
+Escolha ambígua para esse nome, é necessário definir claramente o contexto de uso
+
+411
+
+Não se pode usar essa estrutura de uma DLL
+
+412
+
+Não se pode chamar uma função marcada com o especificador delete
+
+413
+
+MQL4 não é suportado. Para compilar este programa, use o MetaEditor, que está localizado na pasta de instalação do seu terminal MetaTrader 4
+

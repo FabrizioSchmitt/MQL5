@@ -1,0 +1,1660 @@
+https://www.mql5.com/pt/docs/constants/errorswarnings/errorcodes
+
+Erros em Tempo de Execução
+GetLastError() é a função que retorna o código do último erro que está armazenado na variável predefinida _LastError. Este valor pode ser redefinido para zero através da função ResetLastError().
+
+Constante
+
+Código
+
+Descrição
+
+ERR_SUCCESS
+
+0
+
+A operação concluída com sucesso
+
+ERR_INTERNAL_ERROR
+
+4001
+
+Erro interno inesperado
+
+ERR_WRONG_INTERNAL_PARAMETER
+
+4002
+
+Parâmetro errado na chamada interna da função do terminal cliente
+
+ERR_INVALID_PARAMETER
+
+4003
+
+Parâmetro errado ao chamar a função de sistema
+
+ERR_NOT_ENOUGH_MEMORY
+
+4004
+
+Sem memória suficiente para executar a função de sistema
+
+ERR_STRUCT_WITHOBJECTS_ORCLASS
+
+4005
+
+A estrutura contém objetos de strings e/ou arrays dinâmicos e/ou estrutura de tais objetos e/ou classes
+
+ERR_INVALID_ARRAY
+
+4006
+
+Array de um tipo errado, tamanho errado, ou um objeto defeituoso de um array dinâmico
+
+ERR_ARRAY_RESIZE_ERROR
+
+4007
+
+Sem memória suficiente para a realocação de um array, ou uma tentativa de alterar o tamanho de um array estático
+
+ERR_STRING_RESIZE_ERROR
+
+4008
+
+Sem memória suficiente para a realocação de string
+
+ERR_NOTINITIALIZED_STRING
+
+4009
+
+String não inicializada
+
+ERR_INVALID_DATETIME
+
+4010
+
+Data e/ou hora inválida
+
+ERR_ARRAY_BAD_SIZE
+
+4011
+
+Total amount of elements in the array cannot exceed 2147483647
+
+ERR_INVALID_POINTER
+
+4012
+
+Ponteiro errado
+
+ERR_INVALID_POINTER_TYPE
+
+4013
+
+Tipo errado de ponteiro
+
+ERR_FUNCTION_NOT_ALLOWED
+
+4014
+
+Função de sistema não é permitida para chamar
+
+ERR_RESOURCE_NAME_DUPLICATED
+
+4015
+
+Os nomes do recurso dinâmico e do estático equivalem
+
+ERR_RESOURCE_NOT_FOUND
+
+4016
+
+Recurso com este nome não foi encontrado em EX5
+
+ERR_RESOURCE_UNSUPPORTED_TYPE
+
+4017
+
+Tipo de recurso não suportado ou seu tamanho excede 16 Mb
+
+ERR_RESOURCE_NAME_IS_TOO_LONG
+
+4018
+
+O nome do recurso excede 63 caracteres
+
+ERR_MATH_OVERFLOW
+
+4019
+
+Durante cálculo de funções matemáticas ocorreu um estouro
+
+ERR_SLEEP_ERROR
+
+4020
+
+Excede a data de término do teste após chamar Sleep()
+
+ERR_STOPPED
+
+4022
+
+Os testes foram interrompidos forçosamente de fora. Por exemplo, ao interromper a otimização, ao fechar a janela de teste visual ou ao parar o agente de teste
+
+ERR_INVALID_TYPE
+
+4023
+
+Tipo inválido
+
+ERR_INVALID_HANDLE
+
+4024
+
+Manipulador inválido
+
+ERR_TOO_MANY_OBJECTS  
+
+4025
+
+Pool de objetos cheio
+
+Gráficos
+
+ 
+
+ 
+
+ERR_CHART_WRONG_ID
+
+4101
+
+Identificador de gráfico (chart ID) errado
+
+ERR_CHART_NO_REPLY
+
+4102
+
+Gráfico não responde
+
+ERR_CHART_NOT_FOUND
+
+4103
+
+Gráfico não encontrado
+
+ERR_CHART_NO_EXPERT
+
+4104
+
+Nenhum Expert Advisor no gráfico que pudesse manipular o evento
+
+ERR_CHART_CANNOT_OPEN
+
+4105
+
+Erro de abertura de gráfico
+
+ERR_CHART_CANNOT_CHANGE
+
+4106
+
+Falha ao alterar ativo e período de um gráfico
+
+ERR_CHART_WRONG_PARAMETER
+
+4107
+
+Valor de erro do parâmetro para a função que trabalha com gráficos
+
+ERR_CHART_CANNOT_CREATE_TIMER
+
+4108
+
+Falha ao criar timer
+
+ERR_CHART_WRONG_PROPERTY
+
+4109
+
+Identificador de propriedade (property ID) do gráfico errado
+
+ERR_CHART_SCREENSHOT_FAILED
+
+4110
+
+Erro criando telas (screenshots)
+
+ERR_CHART_NAVIGATE_FAILED
+
+4111
+
+Erro navegando através de gráfico
+
+ERR_CHART_TEMPLATE_FAILED
+
+4112
+
+Erro aplicando template
+
+ERR_CHART_WINDOW_NOT_FOUND
+
+4113
+
+Sub-janela contendo o indicador não foi encontrada
+
+ERR_CHART_INDICATOR_CANNOT_ADD
+
+4114
+
+Erro adicionando um indicador no gráfico
+
+ERR_CHART_INDICATOR_CANNOT_DEL
+
+4115
+
+Erro excluindo um indicador do gráfico
+
+ERR_CHART_INDICATOR_NOT_FOUND
+
+4116
+
+Indicador não encontrado no gráfico especificado
+
+Objetos Gráficos
+
+ 
+
+ 
+
+ERR_OBJECT_ERROR
+
+4201
+
+Erro trabalhando com um objeto gráfico
+
+ERR_OBJECT_NOT_FOUND
+
+4202
+
+Objeto gráfico não foi encontrado
+
+ERR_OBJECT_WRONG_PROPERTY
+
+4203
+
+Identificador (ID) de uma propriedade de objeto gráfico errado
+
+ERR_OBJECT_GETDATE_FAILED
+
+4204
+
+Não foi possível obter data correspondente ao valor
+
+ERR_OBJECT_GETVALUE_FAILED
+
+4205
+
+Não foi possível obter valor correspondente à data
+
+MarketInfo
+
+ 
+
+ 
+
+ERR_MARKET_UNKNOWN_SYMBOL
+
+4301
+
+Ativo desconhecido
+
+ERR_MARKET_NOT_SELECTED
+
+4302
+
+Ativo não está selecionado na janela Observação de Mercado
+
+ERR_MARKET_WRONG_PROPERTY
+
+4303
+
+Identificador de uma propriedade de ativo errado
+
+ERR_MARKET_LASTTIME_UNKNOWN
+
+4304
+
+Hora do último tick não é conhecida (sem ticks)
+
+ERR_MARKET_SELECT_ERROR
+
+4305
+
+Erro adicionando ou excluindo um ativo na janela Observação de Marcado
+
+ERR_MARKET_SELECT_LIMIT
+
+4306
+
+Limite de símbolos selecionados em MarketWatch excedido
+
+ERR_MARKET_SESSION_INDEX
+
+4307
+
+Índice de sessão incorreto ao chamar a função SymbolInfoSessionQuote/SymbolInfoSessionTrade
+
+Acesso de Histórico
+
+ 
+
+ 
+
+ERR_HISTORY_NOT_FOUND
+
+4401
+
+Histórico solicitado não encontrado
+
+ERR_HISTORY_WRONG_PROPERTY
+
+4402
+
+Identificador (ID) da propriedade de histórico errado
+
+ERR_HISTORY_TIMEOUT
+
+4403
+
+Esgotado o tempo de solicitação do histórico
+
+ERR_HISTORY_BARS_LIMIT
+
+4404
+
+Número de barras restrito pelas configurações do terminal
+
+ERR_HISTORY_LOAD_ERRORS
+
+4405
+
+Erros múltiplos ao carregar o histórico
+
+ERR_HISTORY_SMALL_BUFFER
+
+4407
+
+A matriz de recebimento é muito pequena para armazenar todos os dados solicitados
+
+Variáveis ​​Globais
+
+ 
+
+ 
+
+ERR_GLOBALVARIABLE_NOT_FOUND
+
+4501
+
+Variável global do terminal cliente não foi encontrada
+
+ERR_GLOBALVARIABLE_EXISTS
+
+4502
+
+Variável global do terminal cliente com o mesmo nome já existe
+
+ERR_GLOBALVARIABLE_NOT_MODIFIED
+
+4503
+
+Não houve modificações de variáveis ​​globais
+
+ERR_GLOBALVARIABLE_CANNOTREAD
+
+4504
+
+Foi impossível abrir e ler o arquivo com os valores das variáveis ​​globais
+
+ERR_GLOBALVARIABLE_CANNOTWRITE
+
+4505
+
+Foi impossível escrever o arquivo com os valores das variáveis ​​globais
+
+ERR_MAIL_SEND_FAILED
+
+4510
+
+Envio de email falhou
+
+ERR_PLAY_SOUND_FAILED
+
+4511
+
+Reprodução de som falhou
+
+ERR_MQL5_WRONG_PROPERTY
+
+4512
+
+Identificador de propriedade do programa errado
+
+ERR_TERMINAL_WRONG_PROPERTY
+
+4513
+
+Identificador de propriedade do terminal errado
+
+ERR_FTP_SEND_FAILED
+
+4514
+
+Envio de arquivo via ftp falhou
+
+ERR_NOTIFICATION_SEND_FAILED
+
+4515
+
+Falha ao enviar uma notificação
+
+ERR_NOTIFICATION_WRONG_PARAMETER
+
+4516
+
+Parâmetro inválido para enviar uma notificação — uma string vazia ou NULL foi passada para a função SendNotification()
+
+ERR_NOTIFICATION_WRONG_SETTINGS
+
+4517
+
+Configurações de notificações erradas no terminal (ID não está especificado ou permissão não está definida)
+
+ERR_NOTIFICATION_TOO_FREQUENT
+
+4518
+
+Freqüência de envio de notificações em excesso
+
+ERR_FTP_NOSERVER
+
+4519
+
+O servidor FTP não está especificado nos atributos de configuração
+
+ERR_FTP_NOLOGIN
+
+4520
+
+O login FTP não está especificado nos atributos de configuração
+
+ERR_FTP_FILE_ERROR
+
+4521
+
+O ficheiro não existe
+
+ERR_FTP_CONNECT_FAILED
+
+4522
+
+A ligação ao servidor FTP falhou
+
+ERR_FTP_CHANGEDIR
+
+4523
+
+Não foi encontrado o diretório no servidor FTP para o upload do ficheiro
+
+Buffers de Indicador Customizado
+
+ 
+
+ 
+
+ERR_BUFFERS_NO_MEMORY
+
+4601
+
+Sem memória suficiente para a distribuição de buffers de indicador
+
+ERR_BUFFERS_WRONG_INDEX
+
+4602
+
+Índice de buffer de indicador errado
+
+Propriedades de Indicador Customizado
+
+ 
+
+ 
+
+ERR_CUSTOM_WRONG_PROPERTY
+
+4603
+
+Identificador (ID) de propriedade do indicador customizado errado
+
+Conta
+
+ 
+
+ 
+
+ERR_ACCOUNT_WRONG_PROPERTY
+
+4701
+
+Identificador (ID) de propriedade da conta errado
+
+ERR_TRADE_WRONG_PROPERTY
+
+4751
+
+Identificador (ID) de propriedade da negociação (trade) errado
+
+ERR_TRADE_DISABLED
+
+4752
+
+Negociação via Expert Advisors proibida
+
+ERR_TRADE_POSITION_NOT_FOUND
+
+4753
+
+Posição não encontrada
+
+ERR_TRADE_ORDER_NOT_FOUND
+
+4754
+
+Ordem não encontrada
+
+ERR_TRADE_DEAL_NOT_FOUND
+
+4755
+
+Operação (deal) não encontrada
+
+ERR_TRADE_SEND_FAILED
+
+4756
+
+Envio de solicitação de negociação falhou
+
+ERR_TRADE_CALC_FAILED
+
+4758
+
+Impossível calcular o valor do índice de negociação
+
+Indicadores
+
+ 
+
+ 
+
+ERR_INDICATOR_UNKNOWN_SYMBOL
+
+4801
+
+Ativo desconhecido
+
+ERR_INDICATOR_CANNOT_CREATE
+
+4802
+
+Indicador não pode ser criado
+
+ERR_INDICATOR_NO_MEMORY
+
+4803
+
+Sem memória suficiente para adicionar o indicador
+
+ERR_INDICATOR_CANNOT_APPLY
+
+4804
+
+O indicador não pode ser aplicado a um outro indicador
+
+ERR_INDICATOR_CANNOT_ADD
+
+4805
+
+Erro ao aplicar um indicador ao gráfico
+
+ERR_INDICATOR_DATA_NOT_FOUND
+
+4806
+
+Dado solicitado não encontrado
+
+ERR_INDICATOR_WRONG_HANDLE
+
+4807
+
+Manuseio de indicador errado
+
+ERR_INDICATOR_WRONG_PARAMETERS
+
+4808
+
+Numero errado de parâmetros ao criar um indicador
+
+ERR_INDICATOR_PARAMETERS_MISSING
+
+4809
+
+Sem parâmetros ao criar um indicador
+
+ERR_INDICATOR_CUSTOM_NAME
+
+4810
+
+O primeiro parâmetro no array deve ser o nome do indicador customizado
+
+ERR_INDICATOR_PARAMETER_TYPE
+
+4811
+
+Tipo de parâmetro inválido no array ao criar um indicador
+
+ERR_INDICATOR_WRONG_INDEX
+
+4812
+
+Índice errado de buffer do indicador solicitado
+
+Profundidade de Mercado
+
+ 
+
+ 
+
+ERR_BOOKS_CANNOT_ADD
+
+4901
+
+Profundidade de Mercado não pode ser adicionado
+
+ERR_BOOKS_CANNOT_DELETE
+
+4902
+
+Profundidade de Mercado não pode ser removido
+
+ERR_BOOKS_CANNOT_GET
+
+4903
+
+Os dados da Profundidade de Mercado não podem ser obtidos
+
+ERR_BOOKS_CANNOT_SUBSCRIBE
+
+4904
+
+Erro em subscrever para receber novos dados da Profundidade de Mercado
+
+Operações de Arquivo
+
+ 
+
+ 
+
+ERR_TOO_MANY_FILES
+
+5001
+
+Mais que 64 arquivos não podem ser abertos ao mesmo tempo
+
+ERR_WRONG_FILENAME
+
+5002
+
+Nome de arquivo inválido
+
+ERR_TOO_LONG_FILENAME
+
+5003
+
+Nome de arquivo longo demais
+
+ERR_CANNOT_OPEN_FILE
+
+5004
+
+Erro de abertura de arquivo
+
+ERR_FILE_CACHEBUFFER_ERROR
+
+5005
+
+Sem memória suficiente de cache para leitura
+
+ERR_CANNOT_DELETE_FILE
+
+5006
+
+Erro excluindo arquivo
+
+ERR_INVALID_FILEHANDLE
+
+5007
+
+Um arquivo com este handle foi fechado, ou simplesmente não estava aberto
+
+ERR_WRONG_FILEHANDLE
+
+5008
+
+Handle de arquivo errado
+
+ERR_FILE_NOTTOWRITE
+
+5009
+
+O arquivo deve estar abertura para escrita
+
+ERR_FILE_NOTTOREAD
+
+5010
+
+O arquivo deve estar aberto para leitura
+
+ERR_FILE_NOTBIN
+
+5011
+
+O arquivo deve estar aberto como um arquivo binário
+
+ERR_FILE_NOTTXT
+
+5012
+
+O arquivo deve estar aberto como um texto
+
+ERR_FILE_NOTTXTORCSV
+
+5013
+
+O arquivo deve estar aberto como um texto ou CSV
+
+ERR_FILE_NOTCSV
+
+5014
+
+O arquivo deve estar aberto como CSV
+
+ERR_FILE_READERROR
+
+5015
+
+Erro de leitura de arquivo
+
+ERR_FILE_BINSTRINGSIZE
+
+5016
+
+Tamanho da string deve estar especificado, porque o arquivo está aberto como binário
+
+ERR_INCOMPATIBLE_FILE
+
+5017
+
+Um arquivo de texto deve ser usado para arrays de strings, para outros arrays - binários
+
+ERR_FILE_IS_DIRECTORY
+
+5018
+
+Isto não é um arquivo, isto é um diretório
+
+ERR_FILE_NOT_EXIST
+
+5019
+
+Arquivo inexistente
+
+ERR_FILE_CANNOT_REWRITE
+
+5020
+
+Arquivo não pode ser reescrito
+
+ERR_WRONG_DIRECTORYNAME
+
+5021
+
+Nome de diretório errado
+
+ERR_DIRECTORY_NOT_EXIST
+
+5022
+
+Diretório inexistente
+
+ERR_FILE_ISNOT_DIRECTORY
+
+5023
+
+Isto é um arquivo, não um diretório
+
+ERR_CANNOT_DELETE_DIRECTORY
+
+5024
+
+O diretório não pode ser removido
+
+ERR_CANNOT_CLEAN_DIRECTORY
+
+5025
+
+Falha ao limpar o diretório (provavelmente um ou mais arquivos estão bloqueados e a operação de remoção falhou)
+
+ERR_FILE_WRITEERROR
+
+5026
+
+Falha ao escrever um recurso para um arquivo
+
+ERR_FILE_ENDOFFILE
+
+5027
+
+Falha ao ler o próximo bloco de dados a partir do arquivo CSV (FileReadString, FileReadNumber, FileReadDatetime, FileReadBool), porque atingido o final do arquivo
+
+Conversão de String
+
+ 
+
+ 
+
+ERR_NO_STRING_DATE
+
+5030
+
+Sem data na string
+
+ERR_WRONG_STRING_DATE
+
+5031
+
+Data errada na string
+
+ERR_WRONG_STRING_TIME
+
+5032
+
+Hora errada na string
+
+ERR_STRING_TIME_ERROR
+
+5033
+
+Erro convertendo string em data
+
+ERR_STRING_OUT_OF_MEMORY
+
+5034
+
+Sem memória suficiente para a string
+
+ERR_STRING_SMALL_LEN
+
+5035
+
+O comprimento da string é menor que o esperado
+
+ERR_STRING_TOO_BIGNUMBER
+
+5036
+
+Número grande demais, maior que ULONG_MAX
+
+ERR_WRONG_FORMATSTRING
+
+5037
+
+string de formato inválido
+
+ERR_TOO_MANY_FORMATTERS
+
+5038
+
+Quantidade de especificadores de formato maior que de parâmetros
+
+ERR_TOO_MANY_PARAMETERS
+
+5039
+
+Quantidade de parâmetros maior que de especificadores de formato
+
+ERR_WRONG_STRING_PARAMETER
+
+5040
+
+Parâmetro de tipo string defeituoso
+
+ERR_STRINGPOS_OUTOFRANGE
+
+5041
+
+Posição fora da string
+
+ERR_STRING_ZEROADDED
+
+5042
+
+0 adicionado ao final da string, uma operação inútil
+
+ERR_STRING_UNKNOWNTYPE
+
+5043
+
+Tipo de dado desconhecido ao converter para uma string
+
+ERR_WRONG_STRING_OBJECT
+
+5044
+
+Objeto de string defeituoso
+
+Operações com Arrays
+
+ 
+
+ 
+
+ERR_INCOMPATIBLE_ARRAYS
+
+5050
+
+Copiando arrays incompatíveis. Array de string pode ser copiado somente para um array de string, e um array numérico - somente em um array numérico
+
+ERR_SMALL_ASSERIES_ARRAY
+
+5051
+
+O array de recepção está declarado como AS_SERIES, e é de tamanho insuficiente.
+
+ERR_SMALL_ARRAY
+
+5052
+
+Array pequeno demais, a posição inicial está fora do array
+
+ERR_ZEROSIZE_ARRAY
+
+5053
+
+Um array de comprimento zero
+
+ERR_NUMBER_ARRAYS_ONLY
+
+5054
+
+Deve ser um array numérico
+
+ERR_ONEDIM_ARRAYS_ONLY
+
+5055
+
+Deve ser um array unidimensional
+
+ERR_SERIES_ARRAY
+
+5056
+
+Série de tempo (timeseries) não pode ser usada
+
+ERR_DOUBLE_ARRAY_ONLY
+
+5057
+
+Deve ser um array de tipo double
+
+ERR_FLOAT_ARRAY_ONLY
+
+5058
+
+Deve ser um array de tipo float
+
+ERR_LONG_ARRAY_ONLY
+
+5059
+
+Deve ser um array de tipo long
+
+ERR_INT_ARRAY_ONLY
+
+5060
+
+Deve ser um array de tipo int
+
+ERR_SHORT_ARRAY_ONLY
+
+5061
+
+Deve ser um array de tipo short
+
+ERR_CHAR_ARRAY_ONLY
+
+5062
+
+Deve ser um array de tipo char
+
+ERR_STRING_ARRAY_ONLY
+
+5063
+
+Deve ser uma matriz do tipo cadeia de caracteres
+
+Operações com OpenCL
+
+ 
+
+ 
+
+ERR_OPENCL_NOT_SUPPORTED
+
+5100
+
+Funções OpenCL não são suportados neste computador
+
+ERR_OPENCL_INTERNAL
+
+5101
+
+Erro interno ocorreu ao executar OpenCL
+
+ERR_OPENCL_INVALID_HANDLE
+
+5102
+
+Handle de OpenCL inválido
+
+ERR_OPENCL_CONTEXT_CREATE
+
+5103
+
+Erro criando o contexto de OpenCL
+
+ERR_OPENCL_QUEUE_CREATE
+
+5104
+
+Falha ao criar um fila de execução em OpenCL
+
+ERR_OPENCL_PROGRAM_CREATE
+
+5105
+
+Erro ocorreu ao compilar um programa OpenCL
+
+ERR_OPENCL_TOO_LONG_KERNEL_NAME
+
+5106
+
+Nome de kernel longo demais(kernel de OpenCL)
+
+ERR_OPENCL_KERNEL_CREATE
+
+5107
+
+Erro criando um kernel de OpenCL
+
+ERR_OPENCL_SET_KERNEL_PARAMETER
+
+5108
+
+Erro ocorreu ao configurar parâmetrospara o kernel de OpenCL
+
+ERR_OPENCL_EXECUTE
+
+5109
+
+Erro em tempo de execução de programa de OpenCL
+
+ERR_OPENCL_WRONG_BUFFER_SIZE
+
+5110
+
+Tamanho inválido do buffer de OpenCL
+
+ERR_OPENCL_WRONG_BUFFER_OFFSET
+
+5111
+
+Deslocamento (offset) inválido do buffer de OpenCL
+
+ERR_OPENCL_BUFFER_CREATE
+
+5112
+
+Falha ao criar um buffer de OpenCL
+
+ERR_OPENCL_TOO_MANY_OBJECTS
+
+5113
+
+Excedido o número máximo de objetos OpenCL
+
+ERR_OPENCL_SELECTDEVICE
+
+5114
+
+Erro ao selecionar o dispositivo OpenCL
+
+Trabalhar com bancos de dados
+
+ 
+
+ 
+
+ERR_DATABASE_INTERNAL
+
+5120
+
+Erro interno no banco de dados
+
+ERR_DATABASE_INVALID_HANDLE
+
+5121
+
+Identificador de banco de dados inválido
+
+ERR_DATABASE_TOO_MANY_OBJECTS
+
+5122
+
+Número máximo de objetos de banco de dados excedido
+
+ERR_DATABASE_CONNECT
+
+5123
+
+Erro ao conectar ao banco de dados
+
+ERR_DATABASE_EXECUTE
+
+5124
+
+Erro de execução de consulta
+
+ERR_DATABASE_PREPARE
+
+5125
+
+Erro ao criar consulta
+
+ERR_DATABASE_NO_MORE_DATA
+
+5126
+
+Não há mais dados de leitura
+
+ERR_DATABASE_STEP
+
+5127
+
+Erro ao passar para o próximo registro da consulta
+
+ERR_DATABASE_NOT_READY
+
+5128
+
+Os dados para leitura dos resultados da consulta ainda não estão prontos
+
+ERR_DATABASE_BIND_PARAMETERS
+
+5129
+
+Erro de substituição automática de parâmetro na consulta SQL
+
+Trabalhando com WebRequest()
+
+ 
+
+ 
+
+ERR_WEBREQUEST_INVALID_ADDRESS
+
+5200
+
+URL inválido
+
+ERR_WEBREQUEST_CONNECT_FAILED
+
+5201
+
+Falha ao conectar com o URL especificado
+
+ERR_WEBREQUEST_TIMEOUT
+
+5202
+
+Tempo limite excedido
+
+ERR_WEBREQUEST_REQUEST_FAILED
+
+5203
+
+Falha na solicitação do HTTP
+
+Trabalhando com uma rede (soquetes)
+
+ 
+
+ 
+
+ERR_NETSOCKET_INVALIDHANDLE
+
+5270
+
+Para a função foi passado um identificador de soquete inválido.
+
+ERR_NETSOCKET_TOO_MANY_OPENED
+
+5271
+
+Muitos soquetes abertos (máximo 128)
+
+ERR_NETSOCKET_CANNOT_CONNECT
+
+5272
+
+Erro ao conectar-se ao host remoto
+
+ERR_NETSOCKET_IO_ERROR
+
+5273
+
+Erro ao enviar/receber dados do soquete
+
+ERR_NETSOCKET_HANDSHAKE_FAILED
+
+5274
+
+Erro ao estabelecer uma conexão segura (TLS Handshake)
+
+ERR_NETSOCKET_NO_CERTIFICATE
+
+5275
+
+Não há dados sobre o certificado que protege a conexão.
+
+Símbolos personalizados
+
+ 
+
+ 
+
+ERR_NOT_CUSTOM_SYMBOL
+
+5300
+
+Deve ser especificado o símbolo personalizado
+
+ERR_CUSTOM_SYMBOL_WRONG_NAME
+
+5301
+
+Nome de símbolo personalizado incorreto. No nome do símbolo é possível utilizar apenas caracteres latinos sem pontuação, espaços e caracteres especiais (são permitidos ".", "_", "&" e "#"). Não é recomendado usar os caracteres <, >, :, ", /,\, |, ?, *.
+
+ERR_CUSTOM_SYMBOL_NAME_LONG
+
+5302
+
+Nome demasiado longo para o símbolo personalizado. O nome não pode exceder 32 caracteres tendo em conta o 0 final
+
+ERR_CUSTOM_SYMBOL_PATH_LONG
+
+5303
+
+Caminho demasiado longo para o símbolo personalizado. A caminho não deve exceder 128 caracteres, tendo em conta "Custom\\", o nome do símbolo, separadores de grupos e o 0 final
+
+ERR_CUSTOM_SYMBOL_EXIST
+
+5304
+
+Já existe um caráter personalizado com esse nome
+
+ERR_CUSTOM_SYMBOL_ERROR
+
+5305
+
+Erro ao criar, excluir ou modificar o símbolo personalizado
+
+ERR_CUSTOM_SYMBOL_SELECTED
+
+5306
+
+Tentativa de excluir um símbolo personalizado selecionado na Observação do mercado (Market Watch)
+
+ERR_CUSTOM_SYMBOL_PROPERTY_WRONG
+
+5307
+
+Propriedade de símbolo personalizado incorreto
+
+ERR_CUSTOM_SYMBOL_PARAMETER_ERROR
+
+5308
+
+Parâmetro errado ao definir propriedade do símbolo personalizado
+
+ERR_CUSTOM_SYMBOL_PARAMETER_LONG
+
+5309
+
+Parâmetro de cadeia muito longo ao definir propriedade do símbolo personalizado
+
+ERR_CUSTOM_TICKS_WRONG_ORDER
+
+5310
+
+Array de ticks não sequenciada por tempo
+
+Calendário econômico
+
+ 
+
+ 
+
+ERR_CALENDAR_MORE_DATA
+
+5400
+
+Tamanho de array insuficiente para obter descrições de todos os valores
+
+ERR_CALENDAR_TIMEOUT
+
+5401
+
+Limite de tempo da solicitação excedido
+
+ERR_CALENDAR_NO_DATA
+
+5402
+
+País não encontrado
+
+Working with databases
+
+ 
+
+ 
+
+ERR_DATABASE_ERROR  
+
+5601
+
+Generic error
+
+ERR_DATABASE_LOGIC
+
+5602
+
+SQLite internal logic error
+
+ERR_DATABASE_PERM
+
+5603
+
+Access denied
+
+ERR_DATABASE_ABORT
+
+5604
+
+Callback routine requested abort
+
+ERR_DATABASE_BUSY
+
+5605
+
+Database file locked
+
+ERR_DATABASE_LOCKED
+
+5606
+
+Database table locked
+
+ERR_DATABASE_NOMEM
+
+5607
+
+Insufficient memory for completing operation
+
+ERR_DATABASE_READONLY
+
+5608
+
+Attempt to write to readonly database
+
+ERR_DATABASE_INTERRUPT
+
+5609
+
+Operation terminated by sqlite3_interrupt()
+
+ERR_DATABASE_IOERR
+
+5610
+
+Disk I/O error
+
+ERR_DATABASE_CORRUPT
+
+5611
+
+Database disk image corrupted
+
+ERR_DATABASE_NOTFOUND
+
+5612
+
+Unknown operation code in sqlite3_file_control()
+
+ERR_DATABASE_FULL
+
+5613
+
+Insertion failed because database is full
+
+ERR_DATABASE_CANTOPEN
+
+5614
+
+Unable to open the database file
+
+ERR_DATABASE_PROTOCOL
+
+5615
+
+Database lock protocol error
+
+ERR_DATABASE_EMPTY
+
+5616
+
+Internal use only
+
+ERR_DATABASE_SCHEMA
+
+5617
+
+Database schema changed
+
+ERR_DATABASE_TOOBIG
+
+5618
+
+String or BLOB exceeds size limit
+
+ERR_DATABASE_CONSTRAINT
+
+5619
+
+Abort due to constraint violation
+
+ERR_DATABASE_MISMATCH
+
+5620
+
+Data type mismatch
+
+ERR_DATABASE_MISUSE
+
+5621
+
+Library used incorrectly
+
+ERR_DATABASE_NOLFS
+
+5622
+
+Uses OS features not supported on host
+
+ERR_DATABASE_AUTH
+
+5623
+
+Authorization denied
+
+ERR_DATABASE_FORMAT
+
+5624
+
+Not used
+
+ERR_DATABASE_RANGE
+
+5625
+
+Bind parameter error, incorrect index
+
+ERR_DATABASE_NOTADB
+
+5626
+
+File opened that is not database file
+
+Métodos matriciais e vetoriais
+
+ 
+
+ 
+
+ERR_MATRIX_INTERNAL
+
+5700
+
+Erro interno do subsistema de execução de matrizes/vetores
+
+ERR_MATRIX_NOT_INITIALIZED
+
+5701
+
+Matriz/vetor não inicializado
+
+ERR_MATRIX_INCONSISTENT
+
+5702
+
+Tamanho de matrizes/vetores em operação inconsistente
+
+ERR_MATRIX_INVALID_SIZE
+
+5703
+
+Tamanho da matriz/vetor incorreto
+
+ERR_MATRIX_INVALID_TYPE
+
+5704
+
+Tipo de matriz/vetor inválido
+
+ERR_MATRIX_FUNC_NOT_ALLOWED
+
+5705
+
+Função não disponível para esta matriz/vetor
+
+ERR_MATRIX_CONTAINS_NAN
+
+5706
+
+Matriz/vetor contém não-números (Nan/Inf)
+
+Modelos ONNX
+
+ 
+
+ 
+
+ERR_ONNX_INTERNAL
+
+5800
+
+Erro interno do padrão ONNX
+
+ERR_ONNX_NOT_INITIALIZED
+
+5801
+
+Erro de inicialização ONNX Runtime API
+
+ERR_ONNX_NOT_SUPPORTED
+
+5802
+
+Propriedade ou valor não compatível com a linguagem MQL5
+
+ERR_ONNX_RUN_FAILED
+
+5803
+
+Erro ao iniciar a ONNX runtime API
+
+ERR_ONNX_INVALID_PARAMETERS_COUNT
+
+5804
+
+Número inválido de parâmetros passados para OnnxRun
+
+ERR_ONNX_INVALID_PARAMETER
+
+5805
+
+Valor de parâmetro incorreto
+
+ERR_ONNX_INVALID_PARAMETER_TYPE
+
+5806
+
+Tipo de parâmetro incorreto
+
+ERR_ONNX_INVALID_PARAMETER_SIZE
+
+5807
+
+Tamanho de parâmetro incorreto
+
+ERR_ONNX_WRONG_DIMENSION
+
+5808
+
+Dimensão do tensor não definida ou especificada incorretamente
+
+ERR_USER_ERROR_FIRST
+
+65536
+
+Erros definidos pelo usuário começam com este código
