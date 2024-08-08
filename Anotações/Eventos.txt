@@ -1,0 +1,2 @@
+OnCalculate ()  - É Evocado toda vez que acontece uma variação de valores no chart. 
+OnInit () - É chamado uma única vez no começo da execução, e serve para inicializar variáveis globais, inciar algumas funções. 

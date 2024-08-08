@@ -1,0 +1,6 @@
+Referências
+1.1 Customização de indicadores
+https://www.mql5.com/pt/docs/constants/indicatorconstants/customindicatorproperties
+
+https://www.mql5.com/pt/docs/customind/indicators_examples
+
